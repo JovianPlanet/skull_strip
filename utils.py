@@ -5,7 +5,7 @@ def fsl_bet(input_file, out_file):
 	skullstrip = BET()
 	skullstrip.inputs.in_file = input_file 		#os.path.join(head_path, head)
 	skullstrip.inputs.out_file = out_file 		#os.path.join(brain_path, fsl_brain)
-	skullstrip.inputs.frac = 0.5				# [0-1] Valores mas pequenos estiman un area mayor de cerebro
+	skullstrip.inputs.frac = 0.2				# [0-1] Valores mas pequenos estiman un area mayor de cerebro
 	#skullstrip.inputs.robust = True
 	skullstrip.inputs.reduce_bias = True
 	skullstrip.run()
