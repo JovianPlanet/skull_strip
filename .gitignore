@@ -1,0 +1,4 @@
+*.pyc
+**/skullStripped
+**/test_dataset
+**/__pycache__
